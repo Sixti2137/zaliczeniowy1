@@ -32,10 +32,13 @@
             this.priceTB = new System.Windows.Forms.TextBox();
             this.giftTB = new System.Windows.Forms.TextBox();
             this.createBT = new System.Windows.Forms.Button();
-            this.giftsLB = new System.Windows.Forms.ListBox();
+            this.giftsLIST = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.showBT = new System.Windows.Forms.Button();
+            this.allpriceLB = new System.Windows.Forms.Label();
+            this.giftsCountLB = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // nameTB
@@ -69,52 +72,84 @@
             this.createBT.TabIndex = 3;
             this.createBT.Text = "stworz";
             this.createBT.UseVisualStyleBackColor = true;
+            this.createBT.Click += new System.EventHandler(this.createBT_Click);
             // 
-            // giftsLB
+            // giftsLIST
             // 
-            this.giftsLB.FormattingEnabled = true;
-            this.giftsLB.ItemHeight = 16;
-            this.giftsLB.Location = new System.Drawing.Point(369, 56);
-            this.giftsLB.Name = "giftsLB";
-            this.giftsLB.Size = new System.Drawing.Size(120, 84);
-            this.giftsLB.TabIndex = 4;
+            this.giftsLIST.FormattingEnabled = true;
+            this.giftsLIST.ItemHeight = 16;
+            this.giftsLIST.Location = new System.Drawing.Point(360, 72);
+            this.giftsLIST.Name = "giftsLIST";
+            this.giftsLIST.Size = new System.Drawing.Size(311, 84);
+            this.giftsLIST.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(41, 99);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 16);
+            this.label2.Size = new System.Drawing.Size(66, 16);
             this.label2.TabIndex = 6;
-            this.label2.Text = "label2";
+            this.label2.Text = "przedmiot";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(41, 183);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 16);
+            this.label3.Size = new System.Drawing.Size(37, 16);
             this.label3.TabIndex = 7;
-            this.label3.Text = "label3";
+            this.label3.Text = "cena";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(38, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.Size = new System.Drawing.Size(32, 16);
             this.label1.TabIndex = 5;
-            this.label1.Text = "label1";
+            this.label1.Text = "imie";
+            // 
+            // showBT
+            // 
+            this.showBT.Location = new System.Drawing.Point(360, 22);
+            this.showBT.Name = "showBT";
+            this.showBT.Size = new System.Drawing.Size(75, 23);
+            this.showBT.TabIndex = 8;
+            this.showBT.Text = "wyswietl";
+            this.showBT.UseVisualStyleBackColor = true;
+            this.showBT.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // allpriceLB
+            // 
+            this.allpriceLB.AutoSize = true;
+            this.allpriceLB.Location = new System.Drawing.Point(357, 169);
+            this.allpriceLB.Name = "allpriceLB";
+            this.allpriceLB.Size = new System.Drawing.Size(87, 16);
+            this.allpriceLB.TabIndex = 9;
+            this.allpriceLB.Text = "laczna kwota:";
+            // 
+            // giftsCountLB
+            // 
+            this.giftsCountLB.AutoSize = true;
+            this.giftsCountLB.Location = new System.Drawing.Point(357, 201);
+            this.giftsCountLB.Name = "giftsCountLB";
+            this.giftsCountLB.Size = new System.Drawing.Size(102, 16);
+            this.giftsCountLB.TabIndex = 10;
+            this.giftsCountLB.Text = "ilosc prezentow:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.giftsCountLB);
+            this.Controls.Add(this.allpriceLB);
+            this.Controls.Add(this.showBT);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.giftsLB);
+            this.Controls.Add(this.giftsLIST);
             this.Controls.Add(this.createBT);
             this.Controls.Add(this.giftTB);
             this.Controls.Add(this.priceTB);
@@ -132,10 +167,13 @@
         private System.Windows.Forms.TextBox priceTB;
         private System.Windows.Forms.TextBox giftTB;
         private System.Windows.Forms.Button createBT;
-        private System.Windows.Forms.ListBox giftsLB;
+        private System.Windows.Forms.ListBox giftsLIST;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button showBT;
+        private System.Windows.Forms.Label allpriceLB;
+        private System.Windows.Forms.Label giftsCountLB;
     }
 }
 
