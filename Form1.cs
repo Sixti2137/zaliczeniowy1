@@ -12,9 +12,30 @@ namespace zaliczeniowy1
 {
     public partial class Form1 : Form
     {
+        public class Gift
+        {
+            public string Name { get; set; }
+            public string Item { get; set; }
+            public int Price { get; set; }
+
+        }
+
+
         public Form1()
         {
             InitializeComponent();
         }
+
+        private void nameTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void giftTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }
