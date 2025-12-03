@@ -36,9 +36,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.showBT = new System.Windows.Forms.Button();
             this.allpriceLB = new System.Windows.Forms.Label();
             this.giftsCountLB = new System.Windows.Forms.Label();
+            this.editBT = new System.Windows.Forms.Button();
+            this.delete = new System.Windows.Forms.Button();
+            this.save = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // nameTB
@@ -47,7 +49,7 @@
             this.nameTB.Name = "nameTB";
             this.nameTB.Size = new System.Drawing.Size(230, 22);
             this.nameTB.TabIndex = 0;
-            this.nameTB.TextChanged += new System.EventHandler(this.nameTB_TextChanged);
+            this.nameTB.Text = "ala";
             // 
             // priceTB
             // 
@@ -55,6 +57,7 @@
             this.priceTB.Name = "priceTB";
             this.priceTB.Size = new System.Drawing.Size(230, 22);
             this.priceTB.TabIndex = 1;
+            this.priceTB.Text = "13";
             // 
             // giftTB
             // 
@@ -62,7 +65,7 @@
             this.giftTB.Name = "giftTB";
             this.giftTB.Size = new System.Drawing.Size(230, 22);
             this.giftTB.TabIndex = 2;
-            this.giftTB.TextChanged += new System.EventHandler(this.giftTB_TextChanged);
+            this.giftTB.Text = "kot";
             // 
             // createBT
             // 
@@ -110,16 +113,6 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "imie";
             // 
-            // showBT
-            // 
-            this.showBT.Location = new System.Drawing.Point(360, 22);
-            this.showBT.Name = "showBT";
-            this.showBT.Size = new System.Drawing.Size(75, 23);
-            this.showBT.TabIndex = 8;
-            this.showBT.Text = "wyswietl";
-            this.showBT.UseVisualStyleBackColor = true;
-            this.showBT.Click += new System.EventHandler(this.button1_Click);
-            // 
             // allpriceLB
             // 
             this.allpriceLB.AutoSize = true;
@@ -138,14 +131,46 @@
             this.giftsCountLB.TabIndex = 10;
             this.giftsCountLB.Text = "ilosc prezentow:";
             // 
+            // editBT
+            // 
+            this.editBT.Location = new System.Drawing.Point(360, 22);
+            this.editBT.Name = "editBT";
+            this.editBT.Size = new System.Drawing.Size(75, 23);
+            this.editBT.TabIndex = 11;
+            this.editBT.Text = "edytuj";
+            this.editBT.UseVisualStyleBackColor = true;
+            this.editBT.Click += new System.EventHandler(this.editBT_Click);
+            // 
+            // delete
+            // 
+            this.delete.Location = new System.Drawing.Point(464, 22);
+            this.delete.Name = "delete";
+            this.delete.Size = new System.Drawing.Size(75, 23);
+            this.delete.TabIndex = 12;
+            this.delete.Text = "usun";
+            this.delete.UseVisualStyleBackColor = true;
+            this.delete.Click += new System.EventHandler(this.delete_Click);
+            // 
+            // save
+            // 
+            this.save.Location = new System.Drawing.Point(149, 276);
+            this.save.Name = "save";
+            this.save.Size = new System.Drawing.Size(75, 23);
+            this.save.TabIndex = 13;
+            this.save.Text = "zapisz";
+            this.save.UseVisualStyleBackColor = true;
+            this.save.Click += new System.EventHandler(this.save_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.save);
+            this.Controls.Add(this.delete);
+            this.Controls.Add(this.editBT);
             this.Controls.Add(this.giftsCountLB);
             this.Controls.Add(this.allpriceLB);
-            this.Controls.Add(this.showBT);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -171,9 +196,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button showBT;
         private System.Windows.Forms.Label allpriceLB;
         private System.Windows.Forms.Label giftsCountLB;
+        private System.Windows.Forms.Button editBT;
+        private System.Windows.Forms.Button delete;
+        private System.Windows.Forms.Button save;
     }
 }
 
